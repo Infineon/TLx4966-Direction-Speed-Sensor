@@ -1,5 +1,7 @@
 # TLx4966-Direction-Speed-Sensor
 
+[![Build Status](https://travis-ci.org/Infineon/TLx4966-Direction-Speed-Sensor.svg?branch=master)](https://travis-ci.org/Infineon/TLx4966-Direction-Speed-Sensor)
+
 C/C++ library of Infineon's double Hall-effect **direction and speed sensor** family for magnetic sensing applications.
 
  1. [Overview](#ovw)
