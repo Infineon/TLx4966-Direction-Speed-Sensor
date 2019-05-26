@@ -9,7 +9,7 @@ C/C++ library of Infineon's double Hall-effect **direction and speed sensor** fa
  5. [Demo Application Example](#demo-ex)
  6. [References](#refs)
 
-<a name="#ovw"></a>
+<a name="ovw"></a>
 
 ## 1. Overview
 
@@ -17,8 +17,7 @@ C/C++ library of Infineon's double Hall-effect **direction and speed sensor** fa
 
 The TLx4966 are a family of integrated circuit double Hall-effect sensors designed specifically for highly accurate applications. Precise magnetic switching points and high temperature stability are achieved by active compensation circuits and chopper techniques on chip. They provide a speed signal at Q2 for every magnetic pole pair and a direction information at Q1, which is provided before the speed signal. 
 
-<img src="docs/img/app-diagram-h.png" height="220px">
-<img src="docs/img/signals-diagram.png" height="220px">
+<img src="docs/img/app-diagram-h.png" height="220px"> <img src="docs/img/signals-diagram.PNG" height="220px">
 
 ### TLx4966 Family Features 
 
@@ -53,7 +52,7 @@ Special Features of the Vertical Variant (TLx4966**V**-(G)/(K)):
 * Sun blinds
 * Any applications with the need of speed and direction detection
 
-<a name="#s-hw"></a>
+<a name="s-hw"></a>
 
 ## 2. Supported Hardware
 
@@ -79,8 +78,7 @@ MCU Platforms |
 
 The Shield2Go form factor is designed to be stacked directly into the XCM 2Go microcontroller board. The [MyIoT Adapter Shield](https://www.infineon.com/cms/en/product/evaluation-boards/my-iot-adapter/) can be used to attach the Shield2Go with any Arduino UNO hardware compatible boards. 
 
-<img src="docs/img/xmc2go.jpg" height="70px">
-<img src="https://www.infineon.com/export/sites/default/media/products/Microcontrollers/devel_tools_SW/XMC1100_Boot-Kit.jpg_620533323.jpg" height="120px">
+<img src="docs/img/xmc2go.jpg" height="70px"><img src="https://www.infineon.com/export/sites/default/media/products/Microcontrollers/devel_tools_SW/XMC1100_Boot-Kit.jpg_620533323.jpg" height="120px">
 
 The firmware pin allocation is configured for the usage of **Socket 2/3** of the MyIoT Adapter Shield. The **Socket 1 configuration is not available**.
 
@@ -104,7 +102,7 @@ Although there is no official Shield2Go or evaluation PCB, this firmware library
 
 Find out more about their particular features on the links to each product page in the [References](#refs) section. 
 
-<a name="#sw-req"></a>
+<a name="sw-req"></a>
 
 ## 3. Software Requirements
 
@@ -113,7 +111,7 @@ Find out more about their particular features on the links to each product page 
 The library examples has been built successfully with the following toolchain software:
 
 Framework | IDE         | Versions                    | MCU Platform Core Libs        | Versions  
----       | ---         |---                          | ---                     |--- | ---
+---       | ---         |---                          | ---                           |--- 
 Arduino   | Arduino IDE | 1.8.9                       | [XMC for Arduino](https://github.com/Infineon/XMC-for-Arduino)     | 1.2.1     
 Arduino   | PlatformIO  | Home 2.0.2·Core + 4.0.0a8   | [Infineon XMC](https://github.com/Infineon/platformio-infineonxmc) | 1.1.2 
 
@@ -197,8 +195,7 @@ In order to evaluate the examples, additionally to the stackable hardware and th
 
 Use the centre mounting hole of the Shield2Go to attach the Out of Shaft add-on, and then stack the board on the XMC 2Go. Alternatively, also the MyIot Shield (sockets 2 or 3) with the supported Arduino UNO form factor MCU platforms can be used as well. 
 
-<img src="docs/img/tle4966k-xmc2go.jpg" height="200px">
-<img src="docs/img/tle4966k-xmc1100.jpg" height="200px">
+<img src="docs/img/tle4966k-xmc2go.jpg" height="200px"> <img src="docs/img/tle4966k-xmc1100.jpg" height="200px">
 
 The positioning of the rotation planes need to be in the **X-Z** plane (as shown in the pictures).
 
@@ -210,9 +207,7 @@ After selecting the board (Tools > Board > XMC1100 2Go*), and the proper COM por
 
 Finally, we can check the monitor output <img src="docs/img/ard-serial-button.png" width="17">. Do not forget to select the proper baudrate. Just rotate the magnet to get some results! 
 
-<img src="docs/img/ard-monitor-example.gif" height="200px">
-<img src="docs/img/outofshaft.gif" height="200px">
-
+<img src="docs/img/ard-monitor-example.gif" height="230px"> <img src="docs/img/outofshaft.gif" height="230px">
 
 <a name="refs"></a>  
 
