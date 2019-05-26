@@ -1,0 +1,64 @@
+#######################################
+# Syntax Coloring Map For TLx4966
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+TLx4966_Error_t KEYWORD1
+TLx4966_Status_t KEYWORD1
+TLx4966_MeasMode_t KEYWORD1
+TLx4966_PowerMode_t    KEYWORD1
+TLx4966_Dir_t KEYWORD1
+TLx4966_SpeedUnit_t KEYWORD1
+TLx4966_Params_t KEYWORD1
+TLx4966_IntEvent_t KEYWORD1
+TLx4966_GPIOLevel_t KEYWORD1
+TLx4966_GPIO_t KEYWORD1
+TLx4966_Timer_t KEYWORD1
+TLx4966_HwIntf_t KEYWORD1
+TLx4966_Handle_t KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin   KEYWORD2
+enable	KEYWORD2
+disable KEYWORD2
+measureLoop KEYWORD2
+readStatus  KEYWORD2
+readDirection   KEYWORD2
+readSpeed   KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+TLx4966    KEYWORD1
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+TLx4966_OK LITERAL1
+TLx4966_INTF_ERROR LITERAL1
+TLx4966_CONF_ERROR LITERAL1
+TLx4966_UNINITED   LITERAL1
+TLx4966_INITED LITERAL1
+TLx4966_OFF    LITERAL1
+TLx4966_ON LITERAL1
+TLx4966_MEASMODE_INTERRUPT LITERAL1
+TLx4966_MEASMODE_POLLING	LITERAL1
+TLx4966_POWMODE_MAIN   LITERAL1
+TLx4966_POWMODE_SWITCH LITERAL1
+TLx4966_DIR_UNDEF  LITERAL1
+TLx4966_DIR_LOW    LITERAL1
+TLx4966_DIR_HIGH   LITERAL1
+TLx4966_SPEED_HERTZ    LITERAL1
+TLx4966_SPEED_RADS LITERAL1
+TLx4966_SPEED_RPM  LITERAL1
+TLx4966_INT_RISING_EDGE    LITERAL1
+TLx4966_INT_FALLING_EDGE   LITERAL1
+TLx4966_GPIO_LOW   LITERAL1
+TLx4966_GPIO_HIGH  LITERAL1
