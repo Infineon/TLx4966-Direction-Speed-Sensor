@@ -7,9 +7,6 @@ sudo: required
 branches:
     - master
 
-cache:
-    directories:
-         - "~/.platformio"
 env:
     matrix:
         - PLATFORMIO_CI_SRC=examples/lowLevelPoll
