@@ -1,15 +1,17 @@
-{
-  "name": "TLx4966-Direction-Speed-Sensor",
-  "keywords": "speed, direction, hall, sensor, magnetic, sensor2go, TLE4966K, TLI4966G, TLE4966V-1K, TLE4966-3K, TLE4966L",
-  "description": "This library provides an interface to interact with the TLx4966 Double Hall sensor family.",
-  "repository":
-  {
-    "type": "git",
-    "url": "https://github.com/Infineon/TLx4966-Direction-Speed-Sensor.git",
-    "branch": "master"
-  },
-  "version": "1.0.0",
-  "license": "MIT",
-  "frameworks": "arduino",
-  "platforms": ["infineonxmc","atmelavr"]
+{  
+   "name":"TLx4966-Direction-Speed-Sensor",
+   "keywords":"speed, direction, hall, sensor, magnetic, sensor2go, TLE4966K, TLI4966G, TLE4966V-1K, TLE4966-3K, TLE4966L",
+   "description":"This library provides an interface to interact with the TLx4966 Double Hall sensor family.",
+   "repository":{  
+      "type":"git",
+      "url":"https://github.com/Infineon/TLx4966-Direction-Speed-Sensor.git",
+      "branch":"master"
+   },
+   "version":"1.0.0",
+   "license":"MIT",
+   "frameworks":"arduino",
+   "platforms":[  
+      "infineonxmc",
+      "atmelavr"
+   ]
 }
