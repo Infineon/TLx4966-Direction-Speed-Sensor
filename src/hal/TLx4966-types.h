@@ -13,7 +13,7 @@
 #ifndef TEST
     #define INLINE inline
     #define STATIC static
-#elif
+#else
     #define INLINE 
     #define STATIC 
 #endif
