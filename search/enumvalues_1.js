@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['tlx4966_5fconf_5ferror',['TLx4966_CONF_ERROR',['../d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa10b6f32592c26ee60386e3581fcc2881',1,'TLx4966-types.h']]],
+  ['tlx4966_5fdir_5fhigh',['TLx4966_DIR_HIGH',['../d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31ae42ac8d75b9ec949a5a5717239d708c7',1,'TLx4966-types.h']]],
+  ['tlx4966_5fdir_5flow',['TLx4966_DIR_LOW',['../d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31af3b2d6cafa6fd138dde90f9f19344d5e',1,'TLx4966-types.h']]],
+  ['tlx4966_5fdir_5fundef',['TLx4966_DIR_UNDEF',['../d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31a3b5c241b662d71eb84a6353e14a33628',1,'TLx4966-types.h']]],
+  ['tlx4966_5fgpio_5fhigh',['TLx4966_GPIO_HIGH',['../d5/d94/group__TLx4966.html#ggaa29587fbb6fd5a0acbb3cf3c953ee1b9a07a53cde980fef990d436293372e545b',1,'TLx4966-types.h']]],
+  ['tlx4966_5fgpio_5flow',['TLx4966_GPIO_LOW',['../d5/d94/group__TLx4966.html#ggaa29587fbb6fd5a0acbb3cf3c953ee1b9a82ad9ab1421c508945286e8993b7c25b',1,'TLx4966-types.h']]],
+  ['tlx4966_5finited',['TLx4966_INITED',['../d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9da224a0e7cd3598db919d9dec473861d15',1,'TLx4966-types.h']]],
+  ['tlx4966_5fint_5ffalling_5fedge',['TLx4966_INT_FALLING_EDGE',['../d5/d94/group__TLx4966.html#gga54b5f15cae25f9b09f73aa0f4acf712fa0c06b687dd44609568e547fd8d3d172e',1,'TLx4966-types.h']]],
+  ['tlx4966_5fint_5frising_5fedge',['TLx4966_INT_RISING_EDGE',['../d5/d94/group__TLx4966.html#gga54b5f15cae25f9b09f73aa0f4acf712fa2f9a25a9a982be8b01740ec6b78d5ca5',1,'TLx4966-types.h']]],
+  ['tlx4966_5fintf_5ferror',['TLx4966_INTF_ERROR',['../d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa3cf0bbfb2ac8a76be353e54ea3b113bb',1,'TLx4966-types.h']]],
+  ['tlx4966_5fmeasmode_5finterrupt',['TLx4966_MEASMODE_INTERRUPT',['../d5/d94/group__TLx4966.html#gga5f92d306a614626f8999bb170d813c17a8324900a771ae969e9c7e13ab47a89a1',1,'TLx4966-types.h']]],
+  ['tlx4966_5fmeasmode_5fpolling',['TLx4966_MEASMODE_POLLING',['../d5/d94/group__TLx4966.html#gga5f92d306a614626f8999bb170d813c17a43a9b99925baec53e78b9566905c4011',1,'TLx4966-types.h']]],
+  ['tlx4966_5foff',['TLx4966_OFF',['../d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9dac1ee6523c370f147b8d64aea8b31a659',1,'TLx4966-types.h']]],
+  ['tlx4966_5fok',['TLx4966_OK',['../d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa5a9203289a0ebb1c2d638577ae4ef76d',1,'TLx4966-types.h']]],
+  ['tlx4966_5fon',['TLx4966_ON',['../d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9dadc6608f3cf1e032410101de00d6931e0',1,'TLx4966-types.h']]],
+  ['tlx4966_5fpowmode_5fmain',['TLx4966_POWMODE_MAIN',['../d5/d94/group__TLx4966.html#gga3a2fabb2e46e5a8072449bd50275f273a9f0ff2d632e781eabc27cc13d8b117ff',1,'TLx4966-types.h']]],
+  ['tlx4966_5fpowmode_5fswitch',['TLx4966_POWMODE_SWITCH',['../d5/d94/group__TLx4966.html#gga3a2fabb2e46e5a8072449bd50275f273a75c27f39ab9e883e4a2eda848c239036',1,'TLx4966-types.h']]],
+  ['tlx4966_5fspeed_5fhertz',['TLx4966_SPEED_HERTZ',['../d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6ac8970beda2ae8ffb04b29e4242db0223',1,'TLx4966-types.h']]],
+  ['tlx4966_5fspeed_5frads',['TLx4966_SPEED_RADS',['../d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6a275aad628812f58de0cbece0c5f2f8c7',1,'TLx4966-types.h']]],
+  ['tlx4966_5fspeed_5frpm',['TLx4966_SPEED_RPM',['../d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6a1d8d510ff113b2ab2430b33dddbcb49b',1,'TLx4966-types.h']]],
+  ['tlx4966_5funinited',['TLx4966_UNINITED',['../d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9daed15587471c64dba7f981502c0466e46',1,'TLx4966-types.h']]]
+];
