@@ -14,18 +14,9 @@
 #include "TLx4966.h"
 
 /**
- * @defgroup TLx4966 C library HAL
+ * @addtogroup tlx4966chal
  * @{
  */
-
-/**
- * @defgroup Speed unit product coefficients
- * @{
- */
-#define TLx4966_SPEED_COEF_HZ      1000.0      /**< Hertz - cps*/
-#define TTLx4966_SPEED_COEF_RADS   6283.2      /**< Rad/s */
-#define TTLx4966_SPEED_COEF_RPM    60000.0     /**< RPM  */
-
 
 /**
  * @brief Look-up array for Speed Unit Coeffients
@@ -33,19 +24,16 @@
 STATIC double TLx4966_SpeedCoeffient[3] = 
 {
     TLx4966_SPEED_COEF_HZ,
-    TTLx4966_SPEED_COEF_RADS,
-    TTLx4966_SPEED_COEF_RPM
+    TLx4966_SPEED_COEF_RADS,
+    TLx4966_SPEED_COEF_RPM
 };
-
-/** @} */
-
 
 /**
  * @brief           Configures the sensor handle attributes
  *                  Mandatory hw interfaces: dir, speed, timer.
  *                  Optional  hw interfaces: power (only for switch mode platform).
  * 
- * @param[in/out]   handle      Pointer to the sensor instance handle
+ * @param[in,out]   *handle     Pointer to the sensor instance handle
  * @param[in]       polesPair   Rotor poles pair number     
  * @param[in]       powMode     Power mode   
  * @param[in]       measMode    Measuring mode 

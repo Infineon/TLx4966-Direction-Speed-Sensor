@@ -1,0 +1,26 @@
+/**
+ * @defgroup    tlx4966hal Hardware Abstraction Layer
+ * @{
+ */
+
+/** @defgroup   tlx4966typ  Data Types
+                TLx4966 sensor family custom data types */
+/** @defgroup   tlx4966chal C Library HAL*/
+/** @defgroup   tlx4966hwi  C Library Hardware Interfaces */
+/** @defgroup   tlx4966wrap C++ Library HAL (Wrapper) */
+
+/** @} */
+
+/**
+ * @defgroup tlx4966hwp Hardware Platforms
+ * @{
+ */
+
+/** @defgroup tlx4966ardhp Arduino Hardware Platforms 
+ * @{
+ */
+
+ /** @defgroup tle4966k2go TLE4966K Shield2Go */
+
+/** @} */
+/** @} */

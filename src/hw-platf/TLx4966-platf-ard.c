@@ -1,6 +1,7 @@
 /** 
  * @file        TLx4966-platf-ard.c
  * @brief       TLx4966 Hardware Platform Arduino
+ * 
  *              The hardware interfaces for the specific Arduino hardware platforms.
  *              As Arduino platform is considered any interface implementation using the 
  *              Arduino Functions set (https://www.arduino.cc/reference/en/).  
@@ -16,7 +17,9 @@
 
 
 /**
- * @defgroup TLx4966 Shield2Go Hardware Platform
+ * @addtogroup tlx4966ardhp
+ * @{
+ * @addtogroup tle4966k2go 
  * @{
  */
 
@@ -129,4 +132,5 @@ TLx4966_HwIntf_t TLx4966_Shield2Go_interrupt =
     NULL
 };
 
+/** @} */
 /** @} */

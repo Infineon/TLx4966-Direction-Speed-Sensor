@@ -19,7 +19,7 @@
 #endif
 
 /**
- * @defgroup    TLx4966 types
+ * @addtogroup  tlx4966typ
  * @{
  */
 
@@ -27,6 +27,7 @@
 
 /**
  * @name    TLx4966 error codes
+ * @{
  */
 typedef enum
 {
@@ -38,6 +39,7 @@ typedef enum
 
 /**
  * @name    TLx4966 status
+ * @{
  */
 typedef enum
 {
@@ -88,6 +90,16 @@ typedef enum
     TLx4966_SPEED_RADS  = 1,     /**< rad/s */
     TLx4966_SPEED_RPM   = 2,     /**< RPM */
 }TLx4966_SpeedUnit_t;
+
+/**
+ * @name TLx4966 speed unit product coefficients
+ * @{
+ */
+#define TLx4966_SPEED_COEF_HZ      1000.0      /**< Hertz - cps (1000 ms)*/
+#define TLx4966_SPEED_COEF_RADS    6283.2      /**< Rad/s (2pi x 1000 ms) */
+#define TLx4966_SPEED_COEF_RPM     60000.0     /**< RPM  (60 x 1000 ms)*/
+
+/** @} */
 /** @} */
 
 /**
@@ -120,8 +132,11 @@ typedef enum
 }TLx4966_GPIOLevel_t;
 /** @} */
 
+/** @} TLx4966 types*/
+
 /**
- * @defgroup TLx4966 hardware interface
+ * @addtogroup tlx4966hwi
+ * @{
  */
 
 /**
@@ -254,6 +269,8 @@ typedef struct
     double                 speed;             /**< Speed. Last value measured */
 }TLx4966_Handle_t;
 
+/** @} TLx4966 Hardware Interface */
+
 /**
  * @brief       Asserts the TLx4966 interface functions 
  * @param[in]   _f  Function call
@@ -262,6 +279,6 @@ typedef struct
 #define INTF_ASSERT(_f)  {TLx4966_Error_t err = _f; \
                     if(err != TLx4966_OK) return err;}
 
-/** @} TLx4966 types*/
+
 
 #endif /** TLx4966_TYPES_H_ **/

@@ -1,0 +1,12 @@
+PROJECT_NAME           = "TLx4966 Direction Speed Sensor"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "C++ Library for Double Hall Switch Direction and Speed Sensor"
+OUTPUT_DIRECTORY       = build
+CREATE_SUBDIRS         = YES
+EXTRACT_ALL            = YES
+INPUT                  = ./../../src  ./../../docs/doxygen
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = ./main_page.md
+DISABLE_INDEX          = YES
+GENERATE_TREEVIEW      = YES
+PROJECT_LOGO           = ./../img/ifx_logo.png

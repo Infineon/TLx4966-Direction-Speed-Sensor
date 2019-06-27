@@ -25,7 +25,7 @@ extern "C"
 } 
 
 /**
- * @defgroup TLx4966 C++ Wrapper Library
+ * @addtogroup tlx4966wrap 
  * @{
  */
 

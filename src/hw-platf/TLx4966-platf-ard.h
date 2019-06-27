@@ -11,14 +11,7 @@
 
 #include "../hal/TLx4966-types.h"
 
-/**
- * @defgroup TLx4966 Arduino Hardware Platforms
- * @{
- */
-
 extern TLx4966_HwIntf_t TLx4966_Shield2Go_poll;       /**< Shield2Go Hardware Interface Arduino - Polling Mode*/
-extern TLx4966_HwIntf_t TLx4966_Shield2Go_interrupt;  /**< Not available. TODO */
-
-/** @} */
+extern TLx4966_HwIntf_t TLx4966_Shield2Go_interrupt;  /**< Not available. @todo TODO */
 
 #endif /** TLx4966_PLATF_ARD_H_ **/
