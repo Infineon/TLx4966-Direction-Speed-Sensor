@@ -9,9 +9,22 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -20,10 +33,28 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ifx_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TLx4966 Direction Speed Sensor
+   &#160;<span id="projectnumber">1.0.1</span>
    </div>
+   <div id="projectbrief">C++ Library for Double Hall Switch Direction and Speed Sensor</div>
   </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -35,17 +66,23 @@
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
-</div><!-- top -->
+$(document).ready(function(){initNavTree('globals.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,196 +98,253 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented file members with links to the documentation:</div>
+<div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>curTime
-: <a class="el" href="d5/d94/group__TLx4966.html#gaac2021fa1f44a4e76f9b65938e6ab09c">TLx4966-platf-ard.c</a>
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#gaac2021fa1f44a4e76f9b65938e6ab09c">TLx4966-platf-ard.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>direction
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#gaa8eb7d6f6015237fd7ec08fb1c83daed">TLx4966-platf-ard.c</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>GPIO_Dir_Init()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga8a074fbe6488854dc01fcf8758aa6870">TLx4966-platf-ard.c</a>
+</li>
+<li>GPIO_Dir_Read()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga140313536872c4855b652ba9b371d290">TLx4966-platf-ard.c</a>
+</li>
+<li>GPIO_Speed_Init()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#gafc4a03733774ee34aaa1744073a35829">TLx4966-platf-ard.c</a>
+</li>
+<li>GPIO_Speed_Read()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga4897ee8d9e22d45487be29b0418991a0">TLx4966-platf-ard.c</a>
 </li>
 </ul>
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>INLINE
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116">TLx4966-types.h</a>
+</li>
 <li>INTF_ASSERT
-: <a class="el" href="da/d25/TLx4966-types_8h.html#aa71b9736cc0aec95db90be6c67e3d0af">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#aa71b9736cc0aec95db90be6c67e3d0af">TLx4966-types.h</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>speed
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga93c1df092c76b67b17bd6f3f97fbd7e1">TLx4966-platf-ard.c</a>
+</li>
+<li>STATIC
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">TLx4966-types.h</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>timer
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga8c4df24aff806487349664b333455077">TLx4966-platf-ard.c</a>
+</li>
+<li>Timer_Delay()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#gaeca52e9025f6e49a55e46b9650eba44d">TLx4966-platf-ard.c</a>
+</li>
+<li>Timer_Elapsed()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga4ff51588148b7e5d517195986d26c5d2">TLx4966-platf-ard.c</a>
+</li>
+<li>Timer_Init()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga9e5249448f4f43d6cbba0160c472ac73">TLx4966-platf-ard.c</a>
+</li>
+<li>Timer_Start()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga690ec8a8723cf0802d536b2f7481bd59">TLx4966-platf-ard.c</a>
+</li>
+<li>Timer_Stop()
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#gab50758e1bffec8d918dc7459cd3bf9f0">TLx4966-platf-ard.c</a>
+</li>
 <li>TLx4966_CalculateSpeed()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga28046a552112bbd542c760410c5281db">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga28046a552112bbd542c760410c5281db">TLx4966.c</a>
 </li>
 <li>TLx4966_CONF_ERROR
-: <a class="el" href="d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa10b6f32592c26ee60386e3581fcc2881">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggaf0e688d199c436de20774e3cf9aff27fa10b6f32592c26ee60386e3581fcc2881">TLx4966-types.h</a>
 </li>
 <li>TLx4966_Config()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga0b2b61bbe653c0510c0bd804144b15b9">TLx4966.h</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga0b2b61bbe653c0510c0bd804144b15b9">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga0b2b61bbe653c0510c0bd804144b15b9">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga0b2b61bbe653c0510c0bd804144b15b9">TLx4966.h</a>
 </li>
 <li>TLx4966_DIR_HIGH
-: <a class="el" href="d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31ae42ac8d75b9ec949a5a5717239d708c7">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31ae42ac8d75b9ec949a5a5717239d708c7">TLx4966-types.h</a>
 </li>
 <li>TLx4966_DIR_LOW
-: <a class="el" href="d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31af3b2d6cafa6fd138dde90f9f19344d5e">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31af3b2d6cafa6fd138dde90f9f19344d5e">TLx4966-types.h</a>
 </li>
 <li>TLx4966_Dir_t
-: <a class="el" href="d5/d94/group__TLx4966.html#gac20ad8b5bf5d05a8bcfef64ff0990b31">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gac20ad8b5bf5d05a8bcfef64ff0990b31">TLx4966-types.h</a>
 </li>
 <li>TLx4966_DIR_UNDEF
-: <a class="el" href="d5/d94/group__TLx4966.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31a3b5c241b662d71eb84a6353e14a33628">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31a3b5c241b662d71eb84a6353e14a33628">TLx4966-types.h</a>
 </li>
 <li>TLx4966_DirectionCallback()
-: <a class="el" href="d5/d94/group__TLx4966.html#gaea7e2c0c61b237fe0f063e2149401e8f">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#gaea7e2c0c61b237fe0f063e2149401e8f">TLx4966.c</a>
 </li>
 <li>TLx4966_Disable()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga0459dc519360dd2da74276a77850fc17">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga0459dc519360dd2da74276a77850fc17">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga0459dc519360dd2da74276a77850fc17">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga0459dc519360dd2da74276a77850fc17">TLx4966.h</a>
 </li>
 <li>TLx4966_Enable()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga34b7ab59d38f71b6ded57998780bea37">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga34b7ab59d38f71b6ded57998780bea37">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga34b7ab59d38f71b6ded57998780bea37">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga34b7ab59d38f71b6ded57998780bea37">TLx4966.h</a>
 </li>
 <li>TLx4966_Error_t
-: <a class="el" href="d5/d94/group__TLx4966.html#gaf0e688d199c436de20774e3cf9aff27f">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gaf0e688d199c436de20774e3cf9aff27f">TLx4966-types.h</a>
 </li>
 <li>TLx4966_GetDirection()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga925f4739d7a1d186e0bed11c2b3c802f">TLx4966.h</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga925f4739d7a1d186e0bed11c2b3c802f">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga925f4739d7a1d186e0bed11c2b3c802f">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga925f4739d7a1d186e0bed11c2b3c802f">TLx4966.h</a>
 </li>
 <li>TLx4966_GetSpeed()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga4b4dac528b6d5c6edbb0f4fd9a95bc22">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga4b4dac528b6d5c6edbb0f4fd9a95bc22">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga4b4dac528b6d5c6edbb0f4fd9a95bc22">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga4b4dac528b6d5c6edbb0f4fd9a95bc22">TLx4966.h</a>
 </li>
 <li>TLx4966_GetStatus()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga3937c625093f5f990d689aea7b101af4">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga3937c625093f5f990d689aea7b101af4">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga3937c625093f5f990d689aea7b101af4">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga3937c625093f5f990d689aea7b101af4">TLx4966.h</a>
 </li>
 <li>TLx4966_GetValues()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga231fe5a8b4df13c80dfc9e26c2d5ae2f">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga231fe5a8b4df13c80dfc9e26c2d5ae2f">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga231fe5a8b4df13c80dfc9e26c2d5ae2f">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga231fe5a8b4df13c80dfc9e26c2d5ae2f">TLx4966.h</a>
 </li>
 <li>TLx4966_GPIO_HIGH
-: <a class="el" href="d5/d94/group__TLx4966.html#ggaa29587fbb6fd5a0acbb3cf3c953ee1b9a07a53cde980fef990d436293372e545b">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#aa29587fbb6fd5a0acbb3cf3c953ee1b9a07a53cde980fef990d436293372e545b">TLx4966-types.h</a>
 </li>
 <li>TLx4966_GPIO_IntCallback
-: <a class="el" href="d5/d94/group__TLx4966.html#ga71ee10a9f61d13b1666adcdd8540c331">TLx4966-types.h</a>
+: <a class="el" href="dd/dd3/group__tlx4966hwi.html#ga71ee10a9f61d13b1666adcdd8540c331">TLx4966-types.h</a>
 </li>
 <li>TLx4966_GPIO_LOW
-: <a class="el" href="d5/d94/group__TLx4966.html#ggaa29587fbb6fd5a0acbb3cf3c953ee1b9a82ad9ab1421c508945286e8993b7c25b">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#aa29587fbb6fd5a0acbb3cf3c953ee1b9a82ad9ab1421c508945286e8993b7c25b">TLx4966-types.h</a>
 </li>
 <li>TLx4966_GPIOLevel_t
-: <a class="el" href="d5/d94/group__TLx4966.html#gaa29587fbb6fd5a0acbb3cf3c953ee1b9">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#aa29587fbb6fd5a0acbb3cf3c953ee1b9">TLx4966-types.h</a>
 </li>
 <li>TLx4966_Init()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga30fe3a17a67a8a28bbf41cc5308ffac5">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga30fe3a17a67a8a28bbf41cc5308ffac5">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga30fe3a17a67a8a28bbf41cc5308ffac5">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga30fe3a17a67a8a28bbf41cc5308ffac5">TLx4966.h</a>
 </li>
 <li>TLx4966_INITED
-: <a class="el" href="d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9da224a0e7cd3598db919d9dec473861d15">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga032abe7159634fbb1fbbfe5c5376db9da224a0e7cd3598db919d9dec473861d15">TLx4966-types.h</a>
 </li>
 <li>TLx4966_INT_FALLING_EDGE
-: <a class="el" href="d5/d94/group__TLx4966.html#gga54b5f15cae25f9b09f73aa0f4acf712fa0c06b687dd44609568e547fd8d3d172e">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#a54b5f15cae25f9b09f73aa0f4acf712fa0c06b687dd44609568e547fd8d3d172e">TLx4966-types.h</a>
 </li>
 <li>TLx4966_INT_RISING_EDGE
-: <a class="el" href="d5/d94/group__TLx4966.html#gga54b5f15cae25f9b09f73aa0f4acf712fa2f9a25a9a982be8b01740ec6b78d5ca5">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#a54b5f15cae25f9b09f73aa0f4acf712fa2f9a25a9a982be8b01740ec6b78d5ca5">TLx4966-types.h</a>
 </li>
 <li>TLx4966_IntEvent_t
-: <a class="el" href="d5/d94/group__TLx4966.html#ga54b5f15cae25f9b09f73aa0f4acf712f">TLx4966-types.h</a>
+: <a class="el" href="de/d6c/_t_lx4966-types_8h.html#a54b5f15cae25f9b09f73aa0f4acf712f">TLx4966-types.h</a>
 </li>
 <li>TLx4966_INTF_ERROR
-: <a class="el" href="d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa3cf0bbfb2ac8a76be353e54ea3b113bb">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggaf0e688d199c436de20774e3cf9aff27fa3cf0bbfb2ac8a76be353e54ea3b113bb">TLx4966-types.h</a>
 </li>
 <li>TLx4966_MEASMODE_INTERRUPT
-: <a class="el" href="d5/d94/group__TLx4966.html#gga5f92d306a614626f8999bb170d813c17a8324900a771ae969e9c7e13ab47a89a1">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga5f92d306a614626f8999bb170d813c17a8324900a771ae969e9c7e13ab47a89a1">TLx4966-types.h</a>
 </li>
 <li>TLx4966_MEASMODE_POLLING
-: <a class="el" href="d5/d94/group__TLx4966.html#gga5f92d306a614626f8999bb170d813c17a43a9b99925baec53e78b9566905c4011">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga5f92d306a614626f8999bb170d813c17a43a9b99925baec53e78b9566905c4011">TLx4966-types.h</a>
 </li>
 <li>TLx4966_MeasMode_t
-: <a class="el" href="d5/d94/group__TLx4966.html#ga5f92d306a614626f8999bb170d813c17">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ga5f92d306a614626f8999bb170d813c17">TLx4966-types.h</a>
 </li>
 <li>TLx4966_OFF
-: <a class="el" href="d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9dac1ee6523c370f147b8d64aea8b31a659">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga032abe7159634fbb1fbbfe5c5376db9dac1ee6523c370f147b8d64aea8b31a659">TLx4966-types.h</a>
 </li>
 <li>TLx4966_OK
-: <a class="el" href="d5/d94/group__TLx4966.html#ggaf0e688d199c436de20774e3cf9aff27fa5a9203289a0ebb1c2d638577ae4ef76d">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ggaf0e688d199c436de20774e3cf9aff27fa5a9203289a0ebb1c2d638577ae4ef76d">TLx4966-types.h</a>
 </li>
 <li>TLx4966_ON
-: <a class="el" href="d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9dadc6608f3cf1e032410101de00d6931e0">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga032abe7159634fbb1fbbfe5c5376db9dadc6608f3cf1e032410101de00d6931e0">TLx4966-types.h</a>
 </li>
 <li>TLx4966_PowerMode_t
-: <a class="el" href="d5/d94/group__TLx4966.html#ga3a2fabb2e46e5a8072449bd50275f273">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ga3a2fabb2e46e5a8072449bd50275f273">TLx4966-types.h</a>
 </li>
 <li>TLx4966_POWMODE_MAIN
-: <a class="el" href="d5/d94/group__TLx4966.html#gga3a2fabb2e46e5a8072449bd50275f273a9f0ff2d632e781eabc27cc13d8b117ff">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga3a2fabb2e46e5a8072449bd50275f273a9f0ff2d632e781eabc27cc13d8b117ff">TLx4966-types.h</a>
 </li>
 <li>TLx4966_POWMODE_SWITCH
-: <a class="el" href="d5/d94/group__TLx4966.html#gga3a2fabb2e46e5a8072449bd50275f273a75c27f39ab9e883e4a2eda848c239036">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga3a2fabb2e46e5a8072449bd50275f273a75c27f39ab9e883e4a2eda848c239036">TLx4966-types.h</a>
 </li>
 <li>TLx4966_Shield2Go_interrupt
-: <a class="el" href="d5/d94/group__TLx4966.html#ga6670e7b041128c5a3c2b6821fa240189">TLx4966-platf-ard.h</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga6670e7b041128c5a3c2b6821fa240189">TLx4966-platf-ard.c</a>
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga6670e7b041128c5a3c2b6821fa240189">TLx4966-platf-ard.c</a>
+, <a class="el" href="d7/d9d/group__tle4966k2go.html#ga6670e7b041128c5a3c2b6821fa240189">TLx4966-platf-ard.h</a>
 </li>
 <li>TLx4966_Shield2Go_poll
-: <a class="el" href="d5/d94/group__TLx4966.html#ga2dddcecbe881bdaea3a32c8c149f284b">TLx4966-platf-ard.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga2dddcecbe881bdaea3a32c8c149f284b">TLx4966-platf-ard.h</a>
+: <a class="el" href="d7/d9d/group__tle4966k2go.html#ga2dddcecbe881bdaea3a32c8c149f284b">TLx4966-platf-ard.c</a>
+, <a class="el" href="d7/d9d/group__tle4966k2go.html#ga2dddcecbe881bdaea3a32c8c149f284b">TLx4966-platf-ard.h</a>
 </li>
 <li>TLx4966_SPEED_COEF_HZ
-: <a class="el" href="d9/d01/group__Speed.html#ga9eddbf41dd94dda0f473356a33446f01">TLx4966.c</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ga9eddbf41dd94dda0f473356a33446f01">TLx4966-types.h</a>
+</li>
+<li>TLx4966_SPEED_COEF_RADS
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gaed0f9a9da505f55af5d4b366557b5850">TLx4966-types.h</a>
+</li>
+<li>TLx4966_SPEED_COEF_RPM
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gab06f895cda86c51c73db4f48f32ff604">TLx4966-types.h</a>
 </li>
 <li>TLx4966_SPEED_HERTZ
-: <a class="el" href="d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6ac8970beda2ae8ffb04b29e4242db0223">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga13dd35658b53846660ccb7d0816957d6ac8970beda2ae8ffb04b29e4242db0223">TLx4966-types.h</a>
 </li>
 <li>TLx4966_SPEED_RADS
-: <a class="el" href="d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6a275aad628812f58de0cbece0c5f2f8c7">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga13dd35658b53846660ccb7d0816957d6a275aad628812f58de0cbece0c5f2f8c7">TLx4966-types.h</a>
 </li>
 <li>TLx4966_SPEED_RPM
-: <a class="el" href="d5/d94/group__TLx4966.html#gga13dd35658b53846660ccb7d0816957d6a1d8d510ff113b2ab2430b33dddbcb49b">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga13dd35658b53846660ccb7d0816957d6a1d8d510ff113b2ab2430b33dddbcb49b">TLx4966-types.h</a>
 </li>
 <li>TLx4966_SpeedCallback()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga7dcba5a97ad9ee72adf9c195c1c60d01">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga7dcba5a97ad9ee72adf9c195c1c60d01">TLx4966.c</a>
 </li>
 <li>TLx4966_SpeedCoeffient
-: <a class="el" href="d9/d01/group__Speed.html#ga131a5d82877796f2c853c3a5807f4aab">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga131a5d82877796f2c853c3a5807f4aab">TLx4966.c</a>
 </li>
 <li>TLx4966_SpeedUnit_t
-: <a class="el" href="d5/d94/group__TLx4966.html#ga13dd35658b53846660ccb7d0816957d6">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ga13dd35658b53846660ccb7d0816957d6">TLx4966-types.h</a>
 </li>
 <li>TLx4966_STARTUP_TIME
-: <a class="el" href="d5/d94/group__TLx4966.html#gaf72a4433451fbf41900e45ae51af4aec">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gaf72a4433451fbf41900e45ae51af4aec">TLx4966-types.h</a>
 </li>
 <li>TLx4966_Status_t
-: <a class="el" href="d5/d94/group__TLx4966.html#ga032abe7159634fbb1fbbfe5c5376db9d">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#ga032abe7159634fbb1fbbfe5c5376db9d">TLx4966-types.h</a>
 </li>
 <li>TLx4966_UNINITED
-: <a class="el" href="d5/d94/group__TLx4966.html#gga032abe7159634fbb1fbbfe5c5376db9daed15587471c64dba7f981502c0466e46">TLx4966-types.h</a>
+: <a class="el" href="d4/d41/group__tlx4966typ.html#gga032abe7159634fbb1fbbfe5c5376db9daed15587471c64dba7f981502c0466e46">TLx4966-types.h</a>
 </li>
 <li>TLx4966_UpdateDirection()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga45c938a1e223cdbbe842b58b97b2110f">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga45c938a1e223cdbbe842b58b97b2110f">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga45c938a1e223cdbbe842b58b97b2110f">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga45c938a1e223cdbbe842b58b97b2110f">TLx4966.h</a>
 </li>
 <li>TLx4966_UpdateSpeed()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga36dd59f9d59c6c4458f8766e5cdc9c8e">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga36dd59f9d59c6c4458f8766e5cdc9c8e">TLx4966.h</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga36dd59f9d59c6c4458f8766e5cdc9c8e">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga36dd59f9d59c6c4458f8766e5cdc9c8e">TLx4966.h</a>
 </li>
 <li>TLx4966_UpdateValues()
-: <a class="el" href="d5/d94/group__TLx4966.html#ga655e2a232e81b3fc0df885e012e43902">TLx4966.c</a>
-, <a class="el" href="d5/d94/group__TLx4966.html#ga655e2a232e81b3fc0df885e012e43902">TLx4966.h</a>
-</li>
-<li>TTLx4966_SPEED_COEF_RADS
-: <a class="el" href="d9/d01/group__Speed.html#ga23c0d53ce79a350e9ed6fbc694f6af55">TLx4966.c</a>
-</li>
-<li>TTLx4966_SPEED_COEF_RPM
-: <a class="el" href="d9/d01/group__Speed.html#ga2ac7036d478e28183a2c9295325776d3">TLx4966.c</a>
+: <a class="el" href="da/d72/group__tlx4966chal.html#ga655e2a232e81b3fc0df885e012e43902">TLx4966.c</a>
+, <a class="el" href="da/d72/group__tlx4966chal.html#ga655e2a232e81b3fc0df885e012e43902">TLx4966.h</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
 </body>
 </html>
