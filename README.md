@@ -127,7 +127,7 @@ There are no additional library dependencies required by the TLx4966 library or 
 
 ### Source Code Documentation
 
-Find the source code documentation in **Doxygen** format on the following [link]() (**Not yet available**).
+Find the source code documentation in **Doxygen** format on the following [link](https://infineon.github.io/TLx4966-Direction-Speed-Sensor/).
 
 ### Arduino IDE
 
