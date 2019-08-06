@@ -15,7 +15,6 @@
 #include <stdlib.h>
 #include "TLx4966-platf-ard.h"
 
-
 /**
  * @addtogroup tlx4966ardhp
  * @{

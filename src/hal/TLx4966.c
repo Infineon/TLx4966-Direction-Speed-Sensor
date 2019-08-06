@@ -196,6 +196,8 @@ TLx4966_Error_t TLx4966_Disable(TLx4966_Handle_t *handle)
 
     handle->hwIntf->timer->stop();
 
+    handle->status = TLx4966_OFF;
+
     return TLx4966_OK;
 }
 
