@@ -64,7 +64,7 @@ The library has been customized for the **TLE4966K** and **TLI4966G** (coming so
 <img src="docs/img/tle4966k-pcb-front.jpg" width="200px">
 
 The complete documentation as schematic and pinout diagram of the boards is included in the **Quick Start Guide**:
-* [TLE4966K S2Go](websitelink) 
+* [TLE4966K S2Go](https://www.infineon.com/dgdl/Infineon-Getting%20Started%20TLE4966K-GettingStarted-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c65fa716c1fd0) 
 * [TLI4966G S2Go](websitelink) (coming soon)
 
 ### Verified Hardware Platforms
@@ -137,7 +137,7 @@ The official Arduino Boards are already available in the IDE, but other third pa
 
 Then we simply need to install the library to use it in your project:
 
-1. **Install the library**. Download this library as a .zip file (get the latest release version [here]()). Install the library in the Arduino IDE in the menu *Sketch > Include Library > Add .ZIP library*.
+1. **Install the library**. Download this library as a .zip file (get the latest release version [here](https://github.com/Infineon/TLx4966-Direction-Speed-Sensor/releases). Install the library in the Arduino IDE in the menu *Sketch > Include Library > Add .ZIP library*.
 
 2. **Include it in your sketch**. With the library installed in the Arduino IDE, you can include it from the menu "Sketch > Include Library > TLx4966-Direction-Speed-Sensor". The header ``` #include <TLx4966-ino.h> ``` will be added to your sketch. You can also open and test one of the examples provided in  *File > Examples > TLx4966-Direction-Speed-Sensor* (find an example in the [Demo Application Example](#demo-ex) section).
 
@@ -221,7 +221,7 @@ Finally, we can check the monitor output <img src="docs/img/ard-serial-button.pn
 * [TLE4966V-1K](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/tle4966v-1k/)
 * [TLE4966L](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/tle4966l/)
 * [TLE4966-3K](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/tle4966-3k/)
-* [TLE4966K Shield2Go](websitelink) 
+* [TLE4966K Shield2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go_2_hall_tle4966k/) 
 * [TLI4966G Shield2Go](websitelink) 
 * [XMC 2Go](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc_2go_xmc1100_v1/) 
 * [XMC1100 Boot Kit](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc11_boot_001/#ispnTab1) 
@@ -232,7 +232,7 @@ Finally, we can check the monitor output <img src="docs/img/ard-serial-button.pn
 ### Related Repositories
  - [Infineon Github](https://github.com/Infineon)
  - [XMC for Arduino](https://github.com/Infineon/XMC-for-Arduino)
- - [Infineon XMC Platformio](https://github.com/Infineon/platformio-infineonxm)
+ - [Infineon XMC Platformio](https://github.com/Infineon/platformio-infineonxmc)
 
 ### Useful Links
  - [Infineon for Makers](https://www.infineon.com/cms/en/tools/landing/infineon-for-makers/)
