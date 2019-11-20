@@ -20,7 +20,7 @@
 
 extern "C" 
 {
-#include "tlx4966/TLx4966.h"
+#include "TLx4966/TLx4966.h"
 #include "hw-platf/TLx4966-platf-ard.h"
 } 
 
