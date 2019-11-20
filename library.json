@@ -7,7 +7,7 @@
       "url":"https://github.com/Infineon/TLx4966-Direction-Speed-Sensor.git",
       "branch":"master"
    },
-   "version":"1.0.1",
+   "version":"1.1.0",
    "license":"MIT",
    "frameworks":"arduino",
    "platforms":[  
