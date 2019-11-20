@@ -20,12 +20,12 @@
 
 extern "C" 
 {
-#include "hal/TLx4966.h"
+#include "tlx4966/TLx4966.h"
 #include "hw-platf/TLx4966-platf-ard.h"
 } 
 
 /**
- * @addtogroup tlx4966wrap 
+ * @addtogroup arduinoAPI
  * @{
  */
 

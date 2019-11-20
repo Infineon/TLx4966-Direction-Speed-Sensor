@@ -1,14 +1,15 @@
 /**
- * @defgroup    tlx4966hal Hardware Abstraction Layer
+ * @defgroup    arduinoAPI Arduino API
+ */
+
+/**
+ * @defgroup    tlx4966 TLx4966 C Library
  * @{
  */
 
-/** @defgroup   tlx4966typ  Data Types
-                TLx4966 sensor family custom data types */
-/** @defgroup   tlx4966chal C Library HAL*/
-/** @defgroup   tlx4966hwi  C Library Hardware Interfaces */
-/** @defgroup   tlx4966wrap C++ Library HAL (Wrapper) */
-
+/** @defgroup   tlx4966typ  Data Types */
+/** @defgroup   tlx4966api  Library API */
+/** @defgroup   tlx4966hal Library HAL*/
 /** @} */
 
 /**

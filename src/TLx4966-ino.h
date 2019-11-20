@@ -10,7 +10,7 @@
 
 extern "C"
 {
-#include "hal/TLx4966-types.h"
+#include "TLx4966/TLx4966-types.h"
 }
 
 /**

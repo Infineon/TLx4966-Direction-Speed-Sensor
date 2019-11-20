@@ -12,9 +12,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "TLx4966.h"
+#include "TLx4966-hal.h"
 
 /**
- * @addtogroup tlx4966chal
+ * @addtogroup tlx4966api
  * @{
  */
 

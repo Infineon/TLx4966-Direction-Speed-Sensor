@@ -9,6 +9,24 @@
 #define TLx4966_H_
 
 #include "TLx4966-types.h"
+#include "TLx4966-hal.h"
+
+/**
+ * @brief Instance handle
+ */
+typedef struct
+{
+    TLx4966_Status_t       status;            /**< Switch status */
+    TLx4966_PowerMode_t    powMode;           /**< Power mode */
+    TLx4966_MeasMode_t     measMode;          /**< Measure mode */
+    TLx4966_SpeedUnit_t    speedUnit;         /**< Speed measure units */
+    uint8_t                polesPair;         /**< Rotor poles pair number */
+    TLx4966_HwIntf_t       *hwIntf;           /**< Hardware interface */
+    TLx4966_Dir_t          direction;         /**< Direction. Last value measured */
+    double                 speed;             /**< Speed. Last value measured */
+}TLx4966_Handle_t;
+
+
 
 void                TLx4966_Config         (TLx4966_Handle_t      *handle, 
                                             uint8_t               polesPair,
