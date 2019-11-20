@@ -140,6 +140,13 @@ typedef enum
 }TLx4966_GPIOLevel_t;
 /** @} */
 
+/**
+ * @brief       Interrupt callback
+ * @param[in]   void *  Generic function argument
+ * @return      void
+ */
+typedef void (*TLx4966_GPIO_IntCallback)(void *);  
+
 /** @} TLx4966 types*/
 
 /**

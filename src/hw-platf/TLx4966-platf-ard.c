@@ -14,6 +14,7 @@
 #include <Arduino.h>
 #include <stdlib.h>
 #include "TLx4966-platf-ard.h"
+#include "../TLx4966/TLx4966-types.h"
 
 /**
  * @addtogroup tlx4966ardhp
