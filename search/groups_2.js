@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_20types',['Data Types',['../d4/d41/group__tlx4966typ.html',1,'']]]
+  ['hardware_20platforms',['Hardware Platforms',['../d0/d14/group__tlx4966hwp.html',1,'']]]
 ];

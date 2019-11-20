@@ -1,7 +1,6 @@
 var _t_lx4966_types_8h =
 [
     [ "TLx4966_Params_t", "d7/dc1/struct_t_lx4966___params__t.html", "d7/dc1/struct_t_lx4966___params__t" ],
-    [ "TLx4966_Handle_t", "db/dd3/struct_t_lx4966___handle__t.html", "db/dd3/struct_t_lx4966___handle__t" ],
     [ "INLINE", "de/d6c/_t_lx4966-types_8h.html#a2eb6f9e0395b47b8d5e3eeae4fe0c116", null ],
     [ "INTF_ASSERT", "de/d6c/_t_lx4966-types_8h.html#aa71b9736cc0aec95db90be6c67e3d0af", null ],
     [ "STATIC", "de/d6c/_t_lx4966-types_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb", null ],
@@ -9,7 +8,7 @@ var _t_lx4966_types_8h =
     [ "TLx4966_SPEED_COEF_RADS", "d4/d41/group__tlx4966typ.html#gaed0f9a9da505f55af5d4b366557b5850", null ],
     [ "TLx4966_SPEED_COEF_RPM", "d4/d41/group__tlx4966typ.html#gab06f895cda86c51c73db4f48f32ff604", null ],
     [ "TLx4966_STARTUP_TIME", "d4/d41/group__tlx4966typ.html#gaf72a4433451fbf41900e45ae51af4aec", null ],
-    [ "TLx4966_GPIO_IntCallback", "dd/dd3/group__tlx4966hwi.html#ga71ee10a9f61d13b1666adcdd8540c331", null ],
+    [ "TLx4966_GPIO_IntCallback", "de/d6c/_t_lx4966-types_8h.html#a71ee10a9f61d13b1666adcdd8540c331", null ],
     [ "TLx4966_Dir_t", "d4/d41/group__tlx4966typ.html#gac20ad8b5bf5d05a8bcfef64ff0990b31", [
       [ "TLx4966_DIR_UNDEF", "d4/d41/group__tlx4966typ.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31a3b5c241b662d71eb84a6353e14a33628", null ],
       [ "TLx4966_DIR_LOW", "d4/d41/group__tlx4966typ.html#ggac20ad8b5bf5d05a8bcfef64ff0990b31af3b2d6cafa6fd138dde90f9f19344d5e", null ],
