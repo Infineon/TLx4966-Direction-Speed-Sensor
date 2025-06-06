@@ -3,10 +3,15 @@
 #ifdef ARDUINO_AVR_UNO
 #define LED1 10 //PB2 SS
 #define LED2 11  //PB3 COPI
+#elif !defined(LED1) || !defined(LED2)
+    // Define LED1 and/or LED2 only if they are NOT already defined
+    #ifndef LED1
+        #define LED1 10 // Default LED1 pin
+    #endif
 
-#else
-#define LED1 10
-#define LED2 11
+    #ifndef LED2
+        #define LED2 11 // Default LED2 pin
+    #endif
 #endif
 
 const int spdPin = 4;     // pin connected to Q2

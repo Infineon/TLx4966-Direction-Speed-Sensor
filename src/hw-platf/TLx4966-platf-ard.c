@@ -111,7 +111,7 @@ STATIC TLx4966_Error_t Timer_Delay(uint32_t timeout)
     return TLx4966_OK;
 }
 
-TLx4966_Timer_t timer = 
+TLx4966_Timer_t TLx4966timer = 
 {
     &Timer_Init,
     &Timer_Start,
@@ -125,7 +125,7 @@ TLx4966_HwIntf_t TLx4966_Shield2Go_poll =
     NULL,
     &direction,
     &speed,
-    &timer
+    &TLx4966timer
 };
 
 
