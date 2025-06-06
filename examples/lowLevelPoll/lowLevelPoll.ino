@@ -1,6 +1,10 @@
 #include <Arduino.h>
 
 #ifdef ARDUINO_AVR_UNO
+#define LED1 10 //PB2 SS
+#define LED2 11  //PB3 COPI
+
+#else
 #define LED1 10
 #define LED2 11
 #endif
