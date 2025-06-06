@@ -20,7 +20,7 @@ const int polePairs = 1;  // multiple pole pairs of magnets supported. 1 = one n
 
 int ms;  // holds number of milliseconds between two pulses of the speed pin
 
-unsigned long timer;    // used for time-measurement between pulses
+unsigned long measuretimer;    // used for time-measurement between pulses
 bool enableSpd = true;  // used for edge-detection of speed signal (as Interrupt is not possible with Q1 of S2Go)
 
 void setup() {
@@ -30,7 +30,7 @@ void setup() {
   pinMode(dirPin, INPUT_PULLUP);
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
-  timer = millis();
+  measuretimer = millis();
 
 }
 
@@ -55,8 +55,8 @@ void loop() {
 // refresh time since last call of spdPulse
 void spdPulse()
 {
-  ms = millis()-timer;
-  timer = millis();
+  ms = millis()-measuretimer;
+  measuretimer = millis();
 }
 
 // print data to serial monitor
