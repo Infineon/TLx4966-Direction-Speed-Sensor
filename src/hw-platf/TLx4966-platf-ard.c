@@ -35,7 +35,9 @@ STATIC const int    dirGPIO   = 3;                                      /**< Pin
 STATIC const int    speedGPIO = x;                                      /**< Pin connected to Q2 */
 STATIC const int    dirGPIO   = y;                                      /**< Pin connected to Q1 */
 #else
-# error "Board not yet defined. Please define the specific Arduino boards Pins"
+STATIC const int    speedGPIO = 7;                                      /**< Pin connected to Q2 */
+STATIC const int    dirGPIO   = 3;                                      /**< Pin connected to Q1 */
+
 #endif
 
 STATIC uint32_t      curTime   = 0;     /**< Current time */
