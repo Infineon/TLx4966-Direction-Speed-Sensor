@@ -25,12 +25,10 @@
 
 //#define CUSTOM_ARDUINO_HARDWARE   /**< Uncomment this line for MH_ET_LIVE_ESP32MINIKIT usage (Not defined as during compilation)*/
 
-#ifdef XMC1100_XMC2GO                                                   /**< xmc2go + Shield2Go  */    
-STATIC const int    speedGPIO = 4;                                      /**< Pin connected to Q2 */
+#if  defined(XMC1100_XMC2GO) || defined(XMC1400_XMC2GO)                             /**< xmc2go + Shield2Go  */    
+STATIC const int    speedGPIO = 4;                                      /**< Pin connected to Q2 */ 
 STATIC const int    dirGPIO   = 9;                                      /**< Pin connected to Q1 */
-#elif ((XMC1100_Boot_Kit)  || (XMC4700_Relax_Kit) || (ARDUINO_AVR_UNO)) /**< xmc arduino and arduino uno boards */  
-STATIC const int    speedGPIO = 7;                                      /**< Pin connected to Q2 */
-STATIC const int    dirGPIO   = 3;                                      /**< Pin connected to Q1 */
+
 #elif defined(CUSTOM_ARDUINO_HARDWARE)                                  /**< Custom Arduino Configuration*/ 
 STATIC const int    speedGPIO = x;                                      /**< Pin connected to Q2 */
 STATIC const int    dirGPIO   = y;                                      /**< Pin connected to Q1 */
@@ -112,7 +110,7 @@ STATIC TLx4966_Error_t Timer_Delay(uint32_t timeout)
     return TLx4966_OK;
 }
 
-TLx4966_Timer_t timer = 
+TLx4966_Timer_t TLx4966timer = 
 {
     &Timer_Init,
     &Timer_Start,
@@ -126,7 +124,7 @@ TLx4966_HwIntf_t TLx4966_Shield2Go_poll =
     NULL,
     &direction,
     &speed,
-    &timer
+    &TLx4966timer
 };
 
 
