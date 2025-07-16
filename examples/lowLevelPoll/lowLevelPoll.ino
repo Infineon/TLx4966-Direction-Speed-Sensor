@@ -1,8 +1,17 @@
 #include <Arduino.h>
 
 #ifdef ARDUINO_AVR_UNO
-#define LED1 10
-#define LED2 11
+#define LED1 10 //PB2 SS
+#define LED2 11  //PB3 COPI
+#elif !defined(LED1) || !defined(LED2)
+    // Define LED1 and/or LED2 only if they are NOT already defined
+    #ifndef LED1
+        #define LED1 10 // Default LED1 pin
+    #endif
+
+    #ifndef LED2
+        #define LED2 11 // Default LED2 pin
+    #endif
 #endif
 
 const int spdPin = 4;     // pin connected to Q2
@@ -11,7 +20,7 @@ const int polePairs = 1;  // multiple pole pairs of magnets supported. 1 = one n
 
 int ms;  // holds number of milliseconds between two pulses of the speed pin
 
-unsigned long timer;    // used for time-measurement between pulses
+unsigned long measuretimer;    // used for time-measurement between pulses
 bool enableSpd = true;  // used for edge-detection of speed signal (as Interrupt is not possible with Q1 of S2Go)
 
 void setup() {
@@ -21,7 +30,7 @@ void setup() {
   pinMode(dirPin, INPUT_PULLUP);
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
-  timer = millis();
+  measuretimer = millis();
 
 }
 
@@ -46,8 +55,8 @@ void loop() {
 // refresh time since last call of spdPulse
 void spdPulse()
 {
-  ms = millis()-timer;
-  timer = millis();
+  ms = millis()-measuretimer;
+  measuretimer = millis();
 }
 
 // print data to serial monitor
@@ -62,3 +71,4 @@ void printOut()
   Serial.print(rpm);
   Serial.println(" RPM");
 }
+
