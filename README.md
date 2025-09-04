@@ -65,7 +65,7 @@ The library has been customized for the **TLE4966K** and **TLI4966G** (coming so
 
 The complete documentation as schematic and pinout diagram of the boards is included in the **Quick Start Guide**:
 * [TLE4966K S2Go](https://www.infineon.com/dgdl/Infineon-Getting%20Started%20TLE4966K-GettingStarted-v01_00-EN.pdf?fileId=5546d4626c1f3dc3016c65fa716c1fd0) 
-* [TLI4966G S2Go](websitelink) (coming soon)
+* [TLI4966G S2Go](https://infineon.github.io/TLx4966-Direction-Speed-Sensor/) (coming soon)
 
 ### Verified Hardware Platforms
 
@@ -80,11 +80,11 @@ MCU Platforms |
 
 The Shield2Go form factor is designed to be stacked directly into the XCM 2Go microcontroller board. The [MyIoT Adapter Shield](https://www.infineon.com/cms/en/product/evaluation-boards/my-iot-adapter/) can be used to attach the Shield2Go with any Arduino UNO hardware compatible boards. 
 
-<img src="docs/img/xmc2go.jpg" height="70px"><img src="https://www.infineon.com/export/sites/default/media/products/Microcontrollers/devel_tools_SW/XMC1100_Boot-Kit.jpg_620533323.jpg" height="120px">
+<img src="docs/img/xmc2go.jpg" height="70px"><img src="./docs/img/tle4966k-xmc1100.jpg" height="120px">
 
 The firmware pin allocation is configured for the usage of **Socket 2/3** of the MyIoT Adapter Shield. The **Socket 1 configuration is not available**.
 
-<img src="https://www.infineon.com/export/sites/default/_images/product/evaluation-boards/Shield2Go_Adapter_board_top_view.jpg_1889680109.jpg" width="150px">
+<img src="./docs/img/tle4966k-pcb-front.jpg" width="150px">
 
 Check the [Quick Start Guide](https://www.infineon.com/dgdl/Infineon-quick_starter_guide-Shield2Go_MY_IoT_Adapter-GS-v01_00-EN.pdf?fileId=5546d462677d0f460167bbdbd8521af9) for the complete information and pinout diagram of the MyIoT adapter.
 
@@ -92,7 +92,7 @@ Check the [Quick Start Guide](https://www.infineon.com/dgdl/Infineon-quick_start
 
 The library is meant to be directly compatible with any other Arduino UNO platforms. Any new validated hardware platform will be added to the MCU Platforms list above.
 
-For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLE4996K](https://www.infineon.com/dgdl/Infineon-TLE4966K-DS-v01_00-en.pdf?fileId=db3a30431f848401011fbc945ed46383) and [TLI4966G](https://www.infineon.com/dgdl/Infineon-TLI4966G-DS-v01_00-EN.pdf?fileId=5546d46269e1c019016a2acfa3af258c), and the overall Infineon´s [Hall switches documentation](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/) on the Infineon website. 
+For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLE4996K](https://www.infineon.com/dgdl/Infineon-TLE4966K-DS-v01_00-en.pdf?fileId=db3a30431f848401011fbc945ed46383) and [TLI4966G](https://www.infineon.com/dgdl/Infineon-TLI4966G-DataSheet-v01_00-EN.pdf?fileId=5546d46269e1c019016a2acfa3af258c), and the overall Infineon´s [Hall switches documentation](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/) on the Infineon website. 
 
 #### Additional compatible sensors
 
@@ -143,7 +143,7 @@ Then we simply need to install the library to use it in your project:
 
 ### PlatformIO 
 
-If you are new to PlatformIO, download and install first Visual Studio Code and the PlatformIO plugin. Please follow the instructions on the [official website](https://docs.platformio.org/en/latest/ide/pioide.html). Then go through [this tutorial](https://diyprojects.io/install-ide-platformio-extension-visual-studio-code-vscode-windows-32-bit-linux/#.XOVQP44zYnI) to get started with PlatformIO in VSCode and create a new project. 
+If you are new to PlatformIO, download and install first Visual Studio Code and the PlatformIO plugin. Please follow the instructions on the [official website](https://docs.platformio.org/en/latest/ide/pioide.html). Then go through [this tutorial](https://docs.platformio.org/en/stable/integration/ide/vscode.html) to get started with PlatformIO in VSCode and create a new project. 
 
 With the project created, now the library and its dependencies can be configured in the ***Platform.ini* Project File**. This file, located in the project root folder, includes one (or several) building environments *[env:__]*. In the *environment* section, the platform, board, and framework are specified. PlatformIO will take care of downloading and installing all dependencies.
 In the following example, we use the XMC 2Go Evaluation Kit (only available for Arduino):
@@ -222,7 +222,7 @@ Finally, we can check the monitor output <img src="docs/img/ard-serial-button.pn
 * [TLE4966L](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/tle4966l/)
 * [TLE4966-3K](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/tle4966-3k/)
 * [TLE4966K Shield2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go_2_hall_tle4966k/) 
-* [TLI4966G Shield2Go](websitelink) 
+* [TLI4966G Shield2Go](https://infineon.github.io/TLx4966-Direction-Speed-Sensor/) 
 * [XMC 2Go](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc_2go_xmc1100_v1/) 
 * [XMC1100 Boot Kit](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc11_boot_001/#ispnTab1) 
 * [XMC4700 Relax Kit for 5V Shields](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc47_relax_5v_ad_v1/) 
