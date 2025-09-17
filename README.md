@@ -95,7 +95,7 @@ Check the [Quick Start Guide](https://www.infineon.com/dgdl/Infineon-quick_start
 
 The library is meant to be directly compatible with any other Arduino UNO platforms. Any new validated hardware platform will be added to the MCU Platforms list above.
 
-For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLE4996K](https://www.infineon.com/dgdl/Infineon-TLE4966K-DS-v01_00-en.pdf?fileId=db3a30431f848401011fbc945ed46383) and [TLI4966G](https://www.infineon.com/dgdl/Infineon-TLI4966G-DataSheet-v01_00-EN.pdf?fileId=5546d46269e1c019016a2acfa3af258c), and the overall Infineon´s [Hall switches documentation](https://www.infineon.com/cms/en/product/sensor/magnetic-sensors/magnetic-position-sensors/hall-switches/) on the Infineon website. 
+For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLE4996K](https://www.infineon.com/dgdl/Infineon-TLE4966K-DS-v01_00-en.pdf?fileId=db3a30431f848401011fbc945ed46383) and [TLI4966G](https://www.infineon.com/dgdl/Infineon-TLI4966G-DataSheet-v01_00-EN.pdf?fileId=5546d46269e1c019016a2acfa3af258c), and the overall Infineon´s [Hall switches documentation](https://www.infineon.com/products/sensor/magnetic-position-sensors/switches-latches) on the Infineon website. 
 
 #### Additional compatible sensors
 
