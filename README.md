@@ -67,7 +67,7 @@ The library has been customized for the **TLE4966K** and **TLI4966G** (coming so
 <img src="docs/img/tle4966k-pcb-front.jpg" width="200px">
 
 The complete documentation as schematic and pinout diagram of the boards is included in the **Quick Start Guide**:
-* [TLE4966K S2Go](https://www.infineon.com/assets/row/public/documents/24/68/infineon-getting-started-tle4966k-gettingstarted-en.pdf) 
+* [TLE4966K S2Go](https://www.infineon.com/assets/row/public/documents/24/49/infineon-tle4966k-datasheet-en.pdf) 
 * [TLI4966G S2Go](https://infineon.github.io/TLx4966-Direction-Speed-Sensor/) (coming soon)
 
 ### Verified Hardware Platforms
