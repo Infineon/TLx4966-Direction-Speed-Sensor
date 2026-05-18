@@ -1,0 +1,5 @@
+<map id="TLx4966::TLx4966" name="TLx4966::TLx4966">
+<area shape="rect" id="Node000001" title="Double hall switch instance constructor Mandatory hw interfaces: dir, speed, timer...." alt="" coords="5,5,145,31"/>
+<area shape="rect" id="Node000002" href="$d3/d72/group__tlx4966api.html#ga0b2b61bbe653c0510c0bd804144b15b9" title="Configures the sensor handle attributes Mandatory hw interfaces: dir, speed, timer...." alt="" coords="193,5,319,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,15,179,15,179,21,145,21"/>
+</map>

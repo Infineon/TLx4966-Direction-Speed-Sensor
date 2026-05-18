@@ -1,0 +1,5 @@
+<map id="TLx4966_SpeedCallback" name="TLx4966_SpeedCallback">
+<area shape="rect" id="Node000001" title="Speed interrupt callback The sensor instance instant speed is updated upon rising edge." alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000002" href="$d3/d72/group__tlx4966api.html#ga28046a552112bbd542c760410c5281db" title="Calculates the speed &#160;&#160;The rising edge of the speed GPIO signal determines the rotating period betwee..." alt="" coords="233,5,419,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,15,220,15,220,21,185,21"/>
+</map>

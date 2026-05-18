@@ -1,0 +1,5 @@
+<map id="TLx4966_UpdateSpeed" name="TLx4966_UpdateSpeed">
+<area shape="rect" id="Node000001" title="Updates the sensor speed. A rising edge is detected when the gpio voltage level changes from low to h..." alt="" coords="5,5,176,31"/>
+<area shape="rect" id="Node000002" href="$d3/d72/group__tlx4966api.html#ga28046a552112bbd542c760410c5281db" title="Calculates the speed &#160;&#160;The rising edge of the speed GPIO signal determines the rotating period betwee..." alt="" coords="224,5,409,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
+</map>

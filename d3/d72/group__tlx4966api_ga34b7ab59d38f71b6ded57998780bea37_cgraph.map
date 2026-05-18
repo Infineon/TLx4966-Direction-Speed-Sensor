@@ -1,0 +1,9 @@
+<map id="TLx4966_Enable" name="TLx4966_Enable">
+<area shape="rect" id="Node000001" title="Enables the sensor." alt="" coords="5,31,133,56"/>
+<area shape="rect" id="Node000002" href="$d3/d72/group__tlx4966api.html#gaea7e2c0c61b237fe0f063e2149401e8f" title="Direction interrupt callback The sensor instance direction is updated upon interrupt event: rising or..." alt="" coords="181,5,380,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,33,168,29,168,34,134,38"/>
+<area shape="rect" id="Node000003" href="$d3/d72/group__tlx4966api.html#ga7dcba5a97ad9ee72adf9c195c1c60d01" title="Speed interrupt callback The sensor instance instant speed is updated upon rising edge." alt="" coords="191,55,371,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,48,177,53,177,58,134,53"/>
+<area shape="rect" id="Node000004" href="$d3/d72/group__tlx4966api.html#ga28046a552112bbd542c760410c5281db" title="Calculates the speed &#160;&#160;The rising edge of the speed GPIO signal determines the rotating period betwee..." alt="" coords="428,55,613,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,65,415,65,415,70,371,70"/>
+</map>

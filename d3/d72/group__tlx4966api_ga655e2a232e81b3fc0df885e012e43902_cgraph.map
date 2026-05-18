@@ -1,0 +1,9 @@
+<map id="TLx4966_UpdateValues" name="TLx4966_UpdateValues">
+<area shape="rect" id="Node000001" title="Updates the rotation direction and speed." alt="" coords="5,31,180,56"/>
+<area shape="rect" id="Node000002" href="$d3/d72/group__tlx4966api.html#ga45c938a1e223cdbbe842b58b97b2110f" title="Updates the rotation direction A rising edge is detected when the gpio voltage level changes from low..." alt="" coords="228,5,419,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,214,27,215,33,180,36"/>
+<area shape="rect" id="Node000003" href="$d3/d72/group__tlx4966api.html#ga36dd59f9d59c6c4458f8766e5cdc9c8e" title="Updates the sensor speed. A rising edge is detected when the gpio voltage level changes from low to h..." alt="" coords="238,55,409,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,50,225,54,224,60,180,55"/>
+<area shape="rect" id="Node000004" href="$d3/d72/group__tlx4966api.html#ga28046a552112bbd542c760410c5281db" title="Calculates the speed &#160;&#160;The rising edge of the speed GPIO signal determines the rotating period betwee..." alt="" coords="467,55,652,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="409,65,453,65,453,70,409,70"/>
+</map>

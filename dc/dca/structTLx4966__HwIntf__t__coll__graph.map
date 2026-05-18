@@ -1,0 +1,7 @@
+<map id="TLx4966_HwIntf_t" name="TLx4966_HwIntf_t">
+<area shape="rect" id="Node000001" title="Hardware interface." alt="" coords="77,123,216,148"/>
+<area shape="rect" id="Node000002" href="$d1/d4c/structTLx4966__GPIO__t.html" title="GPIO hardware interface." alt="" coords="5,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,41,141,121,137,124,82,44"/>
+<area shape="rect" id="Node000003" href="$d6/d03/structTLx4966__Timer__t.html" title="Timer hardware interface." alt="" coords="158,5,293,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,44,157,124,152,121,208,41"/>
+</map>
